@@ -1,0 +1,220 @@
+\documentclass{article}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage[skip=0.4em]{parskip}
+
+\newenvironment{attemize}{
+    \begin{list}{\hfill\textbf{att}\hspace{4mm}}{
+        \setlength{\labelwidth}{30mm}
+        \setlength{\leftmargin}{1.5cm}
+        \setlength{\itemsep}{-0.4em}
+        \let\makelabel
+    }
+}{
+    \end{list}
+}
+
+\newcounter{underparagraf}
+\newenvironment{paragraf}{
+    \begin{list}{
+        \hfill\arabic{section}:\arabic{underparagraf}\hspace{3mm}
+    }{
+        \usecounter{underparagraf}
+        \setlength{\labelwidth}{30mm}
+        \setlength{\leftmargin}{1.5cm}
+        \setlength{\itemsep}{-0.4em}
+        \let\makelabel
+    }
+}{
+    \end{list}
+}
+
+\begin{document}
+
+\hspace{-6mm}
+\includegraphics[scale= 0.3]{etaloggapdf.pdf}
+\vspace{6mm}
+\\
+{\Huge\textbf{Stadgar för Elektrosektionens \\
+Teletekniska Avdelning, ETA}}
+
+% \begin{figure}[t]
+%     \includegraphics[scale= 0.3]{etaloggapdf.pdf}
+% \end{figure}
+
+\section{Ändamål}
+
+Elektroteknologsektionens Teleteskniska Avdelning, ETA är en teknologförening inom Chalmers Studentkår.
+
+ETA har till ändamål:
+
+\begin{attemize}
+    \item tillhandahålla medlemmarna lokaler, utrustning och litteratur.
+    \item genom sin verksamhet bidraga till att befästa högskolans och studentkårens anseende.
+    \item verka stärkande och stimulerande för elektronik och amatrörradioverksamhet bland medlemmar och andra i ideell anda.
+\end{attemize}
+
+\section{Medlemskap}
+
+\begin{paragraf}
+\item Passiv medlem är varje medlem av Chalmers Studentkår.
+\item Aktiv medlem blir den passive medlem som erlagt stadgeenlig medlemsavgift.
+\item Aktivt medlemskap kan, efter ansökan riktad till styrelsen, erhållas av före detta aktiv medlem eller anställd vid CTH.
+\end{paragraf}
+
+\section{Medlemens rättigheter}
+\usecounter{underparagraf}
+
+
+\begin{paragraf}
+    \item Aktiv medlem äger rätt att utnyttja ETA:s lokaler, utrustning och bibliotek, samt föreningens amatörradiostationer enligt av PTS utfärdade bestämmelser och IARUs bandplaner.
+    \item I den utsträckning som föreningsmötet bestämmer tillkommer samma rättigheter passiv medlem.
+    \item Endast aktiv medlem har rösträtt å föreningens sammanträden.
+\end{paragraf}
+
+\section{Medlemens skyldigheter}
+\usecounter{underparagraf}
+
+Medlem är skyldig att rätta sig efter föreningens stadgar och beslut, och att iakttaga de föreskrifter och ordningsregler som styrelsen ger.
+
+Medlem skall bland utomstående, högskolans institutioner och andra, värna om föreningens anseende.
+
+\section{Föreningens sammankomster}
+
+\begin{paragraf}
+    \item Föreningsmötet är ETA:s högsta beslutande organ.
+    \item Föreningsmötet sammanträder på kallelse av styrelsen. Under året hålles två ordinarie sammanträden, höstsammanträdet respektive vårsammanträdet. Vårsammanträdet skall hållas senast 30:e juni.
+    \item Då så erfordras utlyses extra föreningsmöte. Rätt att hos styrelsen begära utlysande av extra möte tillkommer tio aktiva medlemmar samt revisorerna. Dessutom äger föreningsmötet rätt att utlysa extra möte.
+    \item Ordinarie sammanträde skall vara utlyst minst en vecka, och ett extra sammanträde minst tre dagar innan dess hållande.\\
+    Kallelse skall upprättas på ETA:s anslagstavla och av föreningen vedertagna informationskanaler. \\
+    Till kallelsen skall vara fogad föredragningslista.\\
+    Tillägg till föredragningslistan må ej utföras senare än en dag innan mötet.
+    \item Förutom de frågor och motioner som framlämnats, skall å ordinarie höstsammanträde följande punkter förekomma på dagordningen:
+    \begin{enumerate}
+        \item Verksamhetsberättelsen för föregående år.
+        \item Revisionsberättelse.
+        \item Frågan om styrelsens ansvarsfrihet.
+        \item Val av valkommitté.
+    \end{enumerate}
+    Samt å ordinarie vårsammanträde:
+    \begin{enumerate}
+        \item Val av styrelse.
+        \item Val av revisorer.
+        \item Årets medlemsavgift och budget.
+    \end{enumerate}
+    \item Föreningsmötet är beslutsmässigt om minst tio aktiva medlemmar är närvarande. Beslut fattas med enkel majoritet i frågor som upptagits på föredragningslistan. Härvid har varje medlem en röst. Vid lika röstetal har ordförande utslagsröst. Röstning medelst fullmakt får ej ske.\\
+    I ärende som ej är upptaget på den slutliga föredragningslistan, må beslut ej fattas, om tre aktiva medlemmar inlägger veto därvid vid mötet.
+
+\end{paragraf}
+
+\section{Styrelse}
+\usecounter{underparagraf}
+
+ETA:s löpande angelägenheter handhas av en styrelse bestående av fem medlemmar: ordförande, vice ordförande, sekreterare, kassör och materialförvaltare.
+
+Styrelsen väljes under vårsammanträdet och verkar under kårens nästföljande
+verksamhetsår.
+
+Av styrelsens medlemmar skall ordförande och kassör vara myndiga.
+
+\section{Styrelsens åligganden}
+\usecounter{underparagraf}
+
+\begin{paragraf}
+    \item Styrelsen är gemensamt ansvarig för förvaltningen av ETA:s medel och tillgångar.
+    \item Ordförande åligger
+    \begin{attemize}
+        \item leda föreningens sammanträden.
+        \item föra ETA:s talan då något annat ej stadgats eller beslutats.
+        \item inför studentkåren presentera verksamheten och av den samma äska anslag.
+        \item informera E1 vid höstterminens början om ETA:s verksamhet.
+        \item verkställa protokolljusteringar.
+        \item tillse att föreningsmötets beslut verkställes.
+    \end{attemize}
+    \item Vice Ordföranden åligger:
+    \begin{attemize}
+        \item då ordföranden är förhindrad, sköta dennes åligganden.
+        \item ansvara för ETAs lokaler.
+        \item notera brister i lokalen och i samband med föreningens medlemmar åtgärda dessa.
+    \end{attemize}
+    \item Sekreteraren åligger:
+    \begin{attemize}
+        \item vid sammanträden föra protokoll.
+        \item sammankalla styrelse och föreningsmötet.
+        \item ansvara för intern kommunikation till föreningens medlemmar.
+        \item dokumentera och förvalta ETAs medlemsregister och digitala lagringssystem.
+        \end{attemize}
+    \item Kassören åligger:
+    \begin{attemize}
+        \item förvalta ETA:s kassa och föra bok över räkenskaperna.
+        \item inkassera medlemsavgifterna.
+        \item handha nycklar etc. till ETA:s lokaler.
+    \end{attemize}
+    
+    \item Materialförvaltaren åligger:
+    \begin{attemize}
+        \item ha uppsikt över och sköta föreningens inventarier.
+        \item att upprätta inventarieförteckning.
+        \item föreslå föreningsmötet inköp av ny utrustning.
+    \end{attemize}
+    
+\end{paragraf}
+
+\section{Val}
+\usecounter{underparagraf}
+
+Valkommittén har att bland medlemmarna söka lämpliga kandidater till funktionärsposterna. Ytterligare kandidater kan av medlem föreslås mötet (vårsammanträdet). Kandidat skall vara aktiv medlem av ETA.
+
+\section{Medlems uteslutning. Varning}
+\usecounter{underparagraf}
+
+\begin{paragraf}
+    \item Medlem som uppenbarligen skadat ETA, kan uteslutas vilket skall ske på föreningsmöte med minst två tredjedelars majoritet. Förslag av ifrågavarande art, som vid sammanträdet avslås, skall ej protokollföras.
+    \item Styrelsen kan tilldela medlem varning, då den finner anledning härtill.
+\end{paragraf}
+
+\section{Hedersledarmöter}
+\usecounter{underparagraf}
+ETA:s föreningsmöte äger rätt att såsom hedersledamot kalla person, teknolog eller
+annan, som i särskilt hög grad gjort sig förtjänt av ETA:s hedersbevisning.
+
+Hedersledamot åtnjuter aktiv medlems rättigheter och är befriad från medlemsavgift.
+
+\section{Revision}
+\usecounter{underparagraf}
+
+\begin{paragraf}
+    \item I enlighet med kårstadgan granskar kårens revisorer föreningens räkenskaper. Föreningens två egna revisorer, vilka ej får ha annan befattning inom ETA, undantagandes uppgiften extra valnämndsledamot, skall granska räkenskaperna och förteckningarna över inventarier och böcker innan de överlämnas till kårrevisorerna
+    \item Revisorerna skall efter verkställd granskning uppsätta en berättelse i vilken de till-eller avstryker ansvarsfrihet för styrelsen.
+\end{paragraf}
+
+\section{Stadgeändring}
+\usecounter{underparagraf}
+Ändring av eller tillägg till dessa stadgar skall för att äga giltighet beslutas av två möten, varav minst ett ordinarie, och två veckor måste ha förflutit mellan mötena.
+
+För beslut fordras tre fjärdedelars majoritet.
+
+Nya stadgar skall godkännas av Chalmers Studentkårs styrelse.
+
+Stadgeändringsförslag skall vara upptaget på föredragningslistan och skall i sin helhet anslås samtidigt med kallelse till föreningsmötet.
+
+
+\section{Tolkning av stadgar}
+\usecounter{underparagraf}
+I fråga om tolkning av dessa stadgar gäller, intill dess frågan avgjorts av föreningsmötet, styrelsens mening.
+
+\section{Föreningens upplösning}
+\usecounter{underparagraf}
+ Beslut om ETA:s upplösning skall fattas av föreningsmötet med minst tre fjärdedelars majoritet. Eventuell behållning av inventarier får ej delas mellan ETA:s medlemmar utan skall överlämnas till Chalmers Studentkårs förvaltning.
+
+\section{Äldre stadgar}
+\usecounter{underparagraf}
+
+Denna stadga, slutligen antagen av föreningsmötet 2022-05-18, ersätter och upphäver alla tidigare stadgar för ETA.
+
+\end{document}
