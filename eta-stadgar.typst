@@ -1,0 +1,202 @@
+#set text(size: 12pt, lang: "SE")
+#set par(justify: true)
+
+#let document-header = [
+    #set text(size: 10pt)
+    #grid(
+        columns: (auto, 1fr, auto),
+        image("eta-logga.png", height: 2cm), [], align(horizon + right, [Stadgar \ E-sektionens Teletekniska Avdelning, ETA \ Antagen 2026-02-09])
+    )
+    #line(length: 100%)
+]
+#set page(
+    header: document-header,
+    margin: (top: 4cm),
+)
+
+#let attlista(body) = [
+    #set list(marker: [*att*], body-indent: 0.3em)
+    #body
+]
+
+#set heading(numbering: "1:1")
+
+#let group(body) = table(
+    stroke: (left: 1.2pt + luma(50), top: none, right: none, bottom: none),
+    inset: (left: 1em),
+    body
+)
+#let para(level: 2, title, ..body) = context [
+    #show heading: it => text(size: 12pt, weight: 500, it)
+
+    #let heading = heading(level: level)[]
+    #grid(
+        columns: (auto, 1fr),
+        gutter: 0.5em,
+        heading, [#title \ #body.pos().join([\ ])]
+    )
+]
+
+#text(size: 18pt, weight: 900)[Stadgar för E-sektionens Teletekniska Avdelning, ETA]
+#line(length: 4cm)
+
+
+= Ändamål
+#group[
+    #para[E-sektionens Teletekniska Avdelning, ETA, är en teknologförening inom Chalmers Studentkår.]
+
+    #para[ETA har till ändamål:][
+        #attlista[
+        - tillhandahålla medlemmarna lokaler, utrustning och litteratur.
+        - genom sin verksamhet bidraga till att befästa Chalmers tekniska högskolas och Chalmers Studentkårs anseende.
+        - verka stärkande och stimulerande för elektronik och amatörradioverksamhet bland medlemmar och andra i ideell anda.
+        ]
+    ]
+]
+
+= Medlemskap
+#group[
+    #para[Medlem blir den medlem av Chalmers Studentkår som erlagt ETA:s stadgeenliga medlemsavgift.]
+    #para[Medlemskap kan, efter ansökan riktad till styrelsen, erhållas av före detta medlem eller anställd vid Chalmers tekniska högskola.]
+]
+
+= Medlems rättigheter
+#group[
+    #para[Medlem äger rätt att nyttja ETA:s lokaler, utrustning och bibliotek, samt föreningens amatörradiostationer enligt av PTS utfärdade bestämmelser och IARU:s bandplaner.]
+    #para[Endast medlem har rösträtt på föreningens sammanträden.]
+]
+
+= Medlemmens skyldigheter
+#group[
+    #para[Medlemmen är skyldig att rätta sig efter föreningens stadgar och beslut, och att iakttaga de föreskrifter och ordningsregler som styrelsen ger.]
+    #para[Medlemmen skall bland utomstående, Chalmers tekniska högskolas institutioner och andra, värna om föreningens anseende.]
+]
+
+= Föreningens sammankomster
+#group[
+    #para[Föreningsmötet är ETA:s högsta beslutande organ.]
+    #para[Föreningsmötet sammanträder på kallelse av styrelsen. Under året hålles två ordinarie sammanträden, vintersammanträdet respektive vårsammanträdet. Vårsammanträdet skall hållas senast 30:e juni.]
+    #para[Då så erfordras utlyses extra föreningsmöte. Rätt att hos styrelsen begära utlysande av extra möte tillkommer tio medlemmar samt revisorerna. Dessutom äger föreningsmötet rätt att utlysa extra möte.]
+
+== Kallelse till ordinarie möte
+#group[
+    #para(level: 3)[Ordinarie sammanträde skall vara utlyst minst en vecka, och ett extra sammanträde minst tre dagar innan dess hållande.]
+    #para(level: 3)[Kallelse skall upprättas på ETA:s anslagstavla och av föreningen vedertagna informationskanaler.]
+    #para(level: 3)[Till kallelsen skall vara fogad föredragningslista. Tillägg till föredragningslistan må ej utföras senare än en dag innan mötet.]
+]
+
+#para[Förutom de frågor och motioner som framlämnats, skall på ordinarie vintersammanträde följande punkter förekomma på dagordningen:][
+    + Verksamhetsberättelsen för föregående år.
+    + Revisionsberättelse.
+    + Frågan om styrelsens ansvarsfrihet.
+    + Val av valkommité.
+]
+
+#para[Förutom de frågor och motioner som framlämnats, skall på ordinarie vårsammanträde följande punkter förekomma på dagordningen:][
+    + Val av styrelse.
+    + Val av revisor.
+    + Årets medlemsavgift och budget.
+]
+
+#para[Föreningsmötet är beslutsmässigt om minst tio medlemmar är närvarande. Beslut fattas med enkel majoritet i frågor som upptagits på föredragslistan. Härvid har varje medlem en röst. Vid lika rösttal har ordförande utslagsröst. Röstning med fullmakt får ej ske. I ärende som ej är upptaget på slutliga föredragslistan, må beslut ej fattas om tre medlemmar inlägger veto därvid vid mötet.]
+]
+
+= Styrelse
+#group[
+    #para[ETA:s löpande angelägenheter handhas av en styrelse bestående av fem medlemmar: ordförande, vice ordförande, sekreterare, kassör och materialförvaltare.]
+    #para[Styrelsen väljes under vårsammanträdet och verkar under Chalmers Studentkårs nästföljande verksamhetsår.]
+    #para[Av styrelsens medlemmar skall ordförande, vice ordförande och kassör vara myndiga.]
+]
+
+= Styrelsens åligganden
+#group[
+    #para[Styrelsen är gemensamt ansvarig för förvaltningen av ETA:s medel och tillgångar.]
+    #para[Ordföranden åligger:][#attlista[
+    - leda föreningens sammanträden.
+    - föra ETA:s talan då något annat ej stadgats eller beslutats.
+    - inför Chalmers Studentkår presentera verksamheten och av den samma äska anslag.
+    - informera nya studenter på elektroteknologprogrammet vid höstterminens början om ETA:s verksamhet.
+    - verkställa protokolljusteringar.
+    - tillse att föreningsmötets beslut verkställes.
+    ]]
+
+    #para[Vice ordföranden åligger:][#attlista[
+    - då ordföranden är förhindrad, sköta dennes åligganden.
+    - ansvara för ETA:s lokaler.
+    - notera brister i lokalerna och i samarbete med föreningens medlemmar åtgärda dessa.
+    - förvalta fika.
+    ]]
+
+    #para[Sekreteraren åligger:][#attlista[
+    - föra protokoll vid sammanträde.
+    - sammankalla styrelse- och föreningsmötet.
+    - ansvara för intern kommunikation till föreningens medlemmar.
+    - dokumentera och förvalta ETA:s medlemsregister och digitala lagringssystem.
+    ]]
+
+    #para[Kassören åligger:][#attlista[
+    - förvalta ETA:s kassa och bokföra räkenskaperna.
+    - inkassera medlemsavgifterna.
+    - handha föreningens nycklar.
+    ]]
+
+    #para[Materialförvaltaren åligger:][#attlista[
+    - ha uppsikt över och sköta föreningens inventarier.
+    - upprätta inventarieförteckning.
+    - till föreningsmötet föreslå inköp av ny utrustning.
+    ]]
+]
+
+= Val
+#group[
+    #para[Valberedningen har som uppgift att bland medlemmarna söka lämpliga kandidater till funktionärsposterna. Ytterligare kandidater kan även föreslås av medlem vid mötet. Kandidat skall vara medlem i ETA.]
+]
+
+= Medlemsuteslutning samt varning
+#group[
+    #para[Utesluten medlem är den före detta medlem vilken saknar alla av stadgar givna rättigheter. Uteslutna medlemmar kan ej förnya sitt medlemskap.]
+    #para[Medlem som uppenbarligen skadat ETA kan uteslutas, vilket skall ske på föreningsmöte med minst två tredjedelars majoritet. Förslag av detta slag, som vid sammanträdet avslås, skall ej protokollföras.]
+    #para[Uteslutning av medlem kan hävas genom omröstning på föreningsmöte med minst två tredjedelars majoritet.]
+    #para[Styrelsen kan tilldela medlem varning, då den finner anledning härtill.]
+    #para[Styrelsen kan genom enhälligt beslut utesluta en medlem fram till nästa föreningsmöte. Från att styrelsen har beslutat att utesluta en medlem så har styrelsen 48 timmar på att sätta och skicka ut ett datum för mötet. Mötet måste ske inom 14 dagar från beslut. Den uteslutna medlemmen är utesluten tills dess att mötet har beslutat om fortsatt uteslutning. Den uteslutna medlemmen har närvarande-, yttrande- och rösträtt på mötet.]
+]
+
+= Hedersledamöter
+#group[
+    #para[ETA:s föreningsmöte äger rätt att ge titel "hedersledarmot" till teknolog eller annan som i särskilt hög grad gjort sig förtjänt av ETA:s hedersbevisning.]
+    #para[Hedersledamot åtnjuter medlems rättigheter och är befriad från medlemsavgift.]
+]
+
+= Revision
+#group[
+    #para[I enlighet med kårstadgan granskar Chalmers Studentkårs revisorer föreningens räkenskaper. ETA:s egna revisor skall granska räkenskaperna och förteckningarna över inventarier och böcker innan de överlämnas till studentkårens revisorer.]
+    #para[Föreningens revisor får ej ha annan befattning inom ETA, undantaget uppgiften extra valberedningsledamot.]
+    #para[Revisorn skall efter verkställd granskning uppsätta en berättelse i vilken hen ger förslag gällande ansvarsfrihet för styrelsen.]
+    #para[Revisionsberättelsen skall vara utförd samt inlämnad till styrelsen senast vid årsskiftet efter det att det gällande räkenskapsåret har avslutats. Den nuvarande ordförande har till uppgift att se till att detta sker. Vintersammanträdet skall ej kallas till förrän revisionen är utförd.]
+]
+
+= Stadgeändring
+#group[
+    #para[Ändring eller tillägg till dessa stadgar skall för att äga giltighet beslutas av två möten, varav minst ett ordinarie, och två veckor måste ha förflutit mellan mötena.]
+    #para[För beslut fodras tre fjärdedelars majoritet.]
+    #para[Nya stadgar skall godkännas av Chalmers Studentkårs styrelse.]
+    #para[Stadgeändringsförslag skall vara upptaget på föredragslistan och skall i sin helhet anslås samtidigt med kallelse till föreningsmötet.]
+]
+
+= Tolkning av stadgar
+#group[
+    #para[I fråga om tolkning av dessa stadgar gäller intill dess frågan avgjorts av föreningsmötet, styrelsens mening.]
+]
+
+= Föreningens upplösning
+#group[
+    #para[Beslut om ETA:s upplösning skall fattas på två varandra följande ordinarie föreningssammanträden med minst tre fjärdedelars majoritet.]
+    #para[ETA:s upplösning får ej ske i fall 10 medlemmar motsäger sig upplösningen på något av de två sammanträden där frågan tas upp.]
+    #para[Upplösningsförslag skall vara upptaget på föredragningslistan och anslås samtidigt med kallelsen till föreningssammanträdet.]
+    #para[Eventuell behållning av inventarier får ej delas mellan ETA:s medlemmar utan skall överlämnas till Chalmers Studentkårs förvaltning.]
+]
+
+= Äldre stadgar
+#group[
+    #para[Denna stadga, slutgiltligen antagen av föreningsmötet 2026-02-09, ersätter och upphäver alla tidigare stadgar för ETA.]
+]
